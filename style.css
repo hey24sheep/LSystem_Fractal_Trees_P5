@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+}
+
+canvas {
+  display: block;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  vertical-direction: center;
+}
+
+input {
+  margin-left: 24px;
+}
+
+button {
+  margin-right: 24px;
+}
+
+.show {
+  display: initial;
+}
+
+.hide {
+  display: none;
+}
