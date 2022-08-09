@@ -80,7 +80,10 @@ function reset() {
   rules = originalRules;
   initSeed();
   initRules();
-  createPlant();
+  // createPlant();
+  generate();
+  generate();
+  generate();
 }
 
 function getRandomColor() {
@@ -228,6 +231,7 @@ function createSliders(parentDiv) {
 
 
 function generate() {
+  clear();
   var nextSentence = "";
   for (var i = 0; i < sentence.length; i++) {
     var current = sentence.charAt(i);
@@ -355,6 +359,7 @@ function createPlant() {
 }
 
 function setup() {
+  pixelDensity(1)
   // createCanvas(850, 850);
   createCanvas(windowWidth, windowHeight);
 
